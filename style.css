@@ -4,14 +4,19 @@
     box-sizing: border-box;
 }
 
+:root {
+    
+}
+
 body {
-    background-color: #000;
+    background-color: #fff;
 }
 
 .banner {
-    background-color: #FF0000;
     height: 80px;
     position: relative;
+    border: 1px solid #8A784E;
+    /* position: fixed; */
 }
 
 .banner_titulo {
@@ -22,29 +27,60 @@ body {
 
 .banner_titulo {
     text-align: 80px;
+    font-family: "Luckiest Guy", cursive;
 }
 
 .menu {
     height: 40px;
+    font-family: "Roboto Flex", sans-serif;
+    border: 1px solid #8A784E;
+    position: relative;
+}
+
+.menu__nombre_marca {
+    position: absolute;
+    left: 40px;
+    top: 10px;
+    font-family: "Luckiest Guy", cursive;
+}
+
+.menu__nombre_marca a { 
+    text-decoration: none;
+    color: #000;
+}
+
+.menu__nombre_marca::before {
+  font-family: "Font Awesome 6 Free"; 
+  content: "\f805"; 
+  font-weight: 900; 
+}
+
+.menu__enlaces{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.menu__logo--icono {
+    font-size: x-large;
 }
 
 main {
     max-width: 1000px;
     height: 500px;
     margin: 10px auto;
-    background-color: #999;
     position: relative;
-
+    font-family: "Roboto Flex", sans-serif;
+    border: 1px solid #8A784E;
 }
 
-.barra-lateral {
+.barra_lateral {
     position: absolute;
     width: 130px;
     left: 0px;
     top: 0px;
     bottom: 0px;
-    background-color: #fff
-    ;
+    border: 1px solid #8A784E;
 }
 
 .galeria {
@@ -52,7 +88,12 @@ main {
     position: absolute;
     right: 0px;
     margin-top: 10px;
+    
+}
 
+.galeria__titulo {
+    text-align: center;
+    font-family: "Luckiest Guy", cursive;
 }
 
 .galeria__imagen {
