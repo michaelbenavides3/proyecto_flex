@@ -53,8 +53,8 @@ body {
     color: #000;
 }
 
-.menu__nombre_marca::before {
-    font-family: "Font Awesome 6 Free"; 
+.barra_busqueda__iconos::before {
+    font-family: "Font Awesome 6 Free";
     content: "\f805"; 
     font-weight: 900;
 }
@@ -69,6 +69,19 @@ body {
     height: 33px;
     width: 600px;
     border-radius: 8px;
+    padding: 0px 30px;
+}
+
+.fa-magnifying-glass {
+    position: absolute;
+    left: 9px;
+    top: 9px;
+}
+
+.fa-filter {
+    position: absolute;
+    right: 9px;
+    top: 9px;
 }
 
 .menu__enlaces{
