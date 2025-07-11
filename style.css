@@ -4,12 +4,8 @@
     box-sizing: border-box;
 }
 
-:root {
-    
-}
-
 body {
-    background-color: #fff;
+    background-color: #FAF7F3;
 }
 
 .caja_banner_menu {
@@ -22,7 +18,7 @@ body {
 .banner {
     height: 80px;
     position: relative;
-    border: 1px solid #8A784E;
+    background-color: #F68537;
 }
 
 .banner__titulo {
@@ -37,8 +33,9 @@ body {
 .menu {
     height: 40px;
     font-family: "Roboto Flex", sans-serif;
-    border: 1px solid #8A784E;
     position: relative;
+    background-color: #DCC5B2;
+    border: 1px solid #DCC5B2;
 }
 
 .menu__nombre_marca {
@@ -104,12 +101,8 @@ main {
     margin: 120px auto 0px;
     position: relative;
     font-family: "Roboto Flex", sans-serif;
-    border: 1px solid #8A784E;
-}
-
-.caja_barra_lateral {
-    position: relative;
-    border: 1px solid #8A784E;
+    background-color: #F0E4D3;
+    border: 1px solid #DCC5B2;
 }
 
 .barra_lateral {
@@ -118,12 +111,12 @@ main {
     left: 0px;
     top: 0px;
     bottom: 0px;
-    border: 1px solid #8A784E;
     padding-left: 10px;
+    border: 1px solid #DCC5B2;
 }
 
 .barra_lateral div {
-    margin-bottom: 13px;
+    margin-bottom: 10px;
 }
 
 .barra_lateral div a::before {
@@ -172,3 +165,15 @@ main {
     
 }
 
+.redes_sociales {
+    position: absolute;
+    width: auto;
+    height: auto;
+    bottom: 0px;
+    left: 10px;
+    bottom: 10px;
+}
+
+.redes_sociales i {
+    padding-right: 8px;
+}
