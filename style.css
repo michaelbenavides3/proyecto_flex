@@ -12,23 +12,27 @@ body {
     background-color: #fff;
 }
 
+.caja_banner_menu {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+}
+
 .banner {
     height: 80px;
     position: relative;
     border: 1px solid #8A784E;
-    /* position: fixed; */
 }
 
-.banner_titulo {
+.banner__titulo {
     position: absolute;
     right: 60px;
     top: 20px;
-}
-
-.banner_titulo {
     text-align: 80px;
     font-family: "Luckiest Guy", cursive;
 }
+
 
 .menu {
     height: 40px;
@@ -39,7 +43,7 @@ body {
 
 .menu__nombre_marca {
     position: absolute;
-    left: 40px;
+    left: 20px;
     top: 10px;
     font-family: "Luckiest Guy", cursive;
 }
@@ -50,9 +54,9 @@ body {
 }
 
 .menu__nombre_marca::before {
-  font-family: "Font Awesome 6 Free"; 
-  content: "\f805"; 
-  font-weight: 900; 
+    font-family: "Font Awesome 6 Free"; 
+    content: "\f805"; 
+    font-weight: 900;
 }
 
 .menu__enlaces{
@@ -66,21 +70,49 @@ body {
 }
 
 main {
-    max-width: 1000px;
-    height: 500px;
-    margin: 10px auto;
+    max-width: 1100px;
+    height: 480px;
+    margin: 120px auto 0px;
     position: relative;
     font-family: "Roboto Flex", sans-serif;
     border: 1px solid #8A784E;
 }
 
+.caja_barra_lateral {
+    position: relative;
+    border: 1px solid #8A784E;
+}
+
 .barra_lateral {
     position: absolute;
-    width: 130px;
+    width: 230px;
     left: 0px;
     top: 0px;
     bottom: 0px;
     border: 1px solid #8A784E;
+    padding-left: 10px;
+}
+
+.barra_lateral div {
+    margin-bottom: 13px;
+}
+
+.barra_lateral div a::before {
+    font-family: "Font Awesome 6 Free";
+    content: "\f2e7";
+    font-weight: 900;
+    padding-right: 10px;
+}
+
+.barra_lateral div a {
+    text-decoration: none;
+    color: #000;
+}
+
+.barra_lateral__titulo {
+    font-family: "Luckiest Guy", cursive;
+    font-size: large;
+    margin: 10px;
 }
 
 .galeria {
@@ -110,6 +142,4 @@ main {
     object-fit: cover;
     
 }
-
-
 
