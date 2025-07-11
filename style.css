@@ -4,3 +4,71 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #000;
+}
+
+.banner {
+    background-color: #FF0000;
+    height: 80px;
+    position: relative;
+}
+
+.banner_titulo {
+    position: absolute;
+    right: 60px;
+    top: 20px;
+}
+
+.banner_titulo {
+    text-align: 80px;
+}
+
+.menu {
+    height: 40px;
+}
+
+main {
+    max-width: 1000px;
+    height: 500px;
+    margin: 10px auto;
+    background-color: #999;
+    position: relative;
+
+}
+
+.barra-lateral {
+    position: absolute;
+    width: 130px;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    background-color: #fff
+    ;
+}
+
+.galeria {
+    max-width: 859px;
+    position: absolute;
+    right: 0px;
+    margin-top: 10px;
+
+}
+
+.galeria__imagen {
+    width: 206px;
+    height: 206px;
+    display: inline-block;
+    border: 1px solid #000;
+    margin: 0 auto;
+
+}
+
+.galeria__imagen--imagen {
+    width: 100%;
+    object-fit: cover;
+    
+}
+
+
+
