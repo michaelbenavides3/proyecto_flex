@@ -59,15 +59,31 @@ body {
     font-weight: 900;
 }
 
+.barra_busqueda {
+    position: absolute;
+    right: 440px;
+    top: 3px;
+}
+
+.barra_busqueda input {
+    height: 33px;
+    width: 600px;
+    border-radius: 8px;
+}
+
 .menu__enlaces{
     position: absolute;
     right: 10px;
     top: 10px;
+    font-weight: bold;
 }
 
-.menu__logo--icono {
-    font-size: x-large;
+.menu__enlaces a {
+    padding: 0px 10px;
+    text-decoration: none;
+    color: #000;
 }
+
 
 main {
     max-width: 1100px;
