@@ -8,7 +8,7 @@ body {
     background-color: #FAF7F3;
 }
 
-.caja_banner_menu {
+.caja_banner_menu { /* Bloque para contener el banner y el menu */
     position: fixed;
     top: 0px;
     left: 0px;
@@ -16,13 +16,13 @@ body {
     z-index: 100;
 }
 
-.banner {
+.banner { /* Bloque para contener las etiquetas dentro del banner */
     height: 80px;
     position: relative;
     background-color: #F68537;
 }
 
-.banner__titulo {
+.banner__titulo { /*Elemento del bloque banner */
     position: absolute;
     right: 60px;
     top: 20px;
@@ -30,8 +30,7 @@ body {
     font-family: "Luckiest Guy", cursive;
 }
 
-
-.menu {
+.menu { /* Bloque menu */
     height: 40px;
     font-family: "Roboto Flex", sans-serif;
     position: relative;
@@ -39,64 +38,58 @@ body {
     border: 1px solid #DCC5B2;
 }
 
-.menu__nombre_marca {
+.menu__nombre_marca { /* Elemento del bloque menu */
     position: absolute;
     left: 20px;
     top: 10px;
     font-family: "Luckiest Guy", cursive;
 }
 
-.menu__nombre_marca a { 
+.menu__nombre_marca a { /* Elemento del bloque menu --- se modificaron las equitas de tipo enlace */
     text-decoration: none;
     color: #000;
 }
 
-.barra_busqueda__iconos::before {
-    font-family: "Font Awesome 6 Free";
-    content: "\f805"; 
-    font-weight: 900;
-}
-
-.barra_busqueda {
+.barra_busqueda { /* bloque: Ubicar de manera absoluta la barra de búsqueda dentro del bloque menú  */
     position: absolute;
     right: 440px;
     top: 3px;
 }
 
-.barra_busqueda input {
+.barra_busqueda input { /* Das estilos a la barra de búsqueda */
     height: 33px;
     width: 600px;
     border-radius: 8px;
     padding: 0px 30px;
 }
 
-.fa-magnifying-glass {
+.fa-magnifying-glass { /* Posicionar de manera absoluta el ícono de vidrio de aumento */
     position: absolute;
     left: 9px;
     top: 9px;
 }
 
-.fa-filter {
+.fa-filter { /* Posicionar de manera absoluta el ícono de filtros */
     position: absolute;
     right: 9px;
     top: 9px;
 }
 
-.menu__enlaces{
+.menu__enlaces{  /* Elementos  del bloque menú que contiene los íconos del mismo */
     position: absolute;
     right: 10px;
     top: 10px;
     font-weight: bold;
 }
 
-.menu__enlaces a {
+.menu__enlaces a { /* Dar estilos a los enlances del menú */
     padding: 0px 10px;
     text-decoration: none;
     color: #000;
 }
 
 
-main {
+main { /* Bloque que contiene los elementos barra lateral izq, galería e íconos */
     max-width: 1100px;
     height: 480px;
     margin: 120px auto 0px;
@@ -106,7 +99,7 @@ main {
     border: 1px solid #DCC5B2;
 }
 
-.barra_lateral {
+.barra_lateral { /* Bloque para contener los elementos de la barra lateral */
     position: absolute;
     width: 230px;
     left: 0px;
@@ -120,25 +113,25 @@ main {
     margin-bottom: 10px;
 }
 
-.barra_lateral div a::before {
+.barra_lateral div a::before { /* Agregar íconos a los enlaces de categorías del menú del comercio */
     font-family: "Font Awesome 6 Free";
     content: "\f2e7";
     font-weight: 900;
     padding-right: 10px;
 }
 
-.barra_lateral div a {
+.barra_lateral div a { /* Dar estilos a los enlaces que contienes las categorías */
     text-decoration: none;
     color: #000;
 }
 
-.barra_lateral__titulo {
+.barra_lateral__titulo { /* Elemento de la barra lateral: estilos al título del menú del comercio */
     font-family: "Luckiest Guy", cursive;
     font-size: large;
     margin: 10px;
 }
 
-.galeria {
+.galeria { /* Bloque que contiene las fotos de los productos del comercio */
     max-width: 859px;
     position: absolute;
     right: 0px;
@@ -146,12 +139,12 @@ main {
     
 }
 
-.galeria__titulo {
+.galeria__titulo { /* Elemento del bloque galería: dar estilos al menú */
     text-align: center;
     font-family: "Luckiest Guy", cursive;
 }
 
-.galeria__imagen {
+.galeria__imagen { /* Elemento del bloque galería: dar estilos a la caja que contiene la imagen del producto */
     width: 206px;
     height: 206px;
     display: inline-block;
@@ -160,13 +153,13 @@ main {
 
 }
 
-.galeria__imagen--imagen {
+.galeria__imagen--imagen { /* Modificador del bloque galeria: dar estilos a las imágenes */
     width: 100%;
     object-fit: cover;
     
 }
 
-.redes_sociales {
+.redes_sociales { /* Bloque que contiene los íconos de las redes sociales del comercio */
     position: absolute;
     width: auto;
     height: auto;
@@ -175,6 +168,11 @@ main {
     bottom: 10px;
 }
 
-.redes_sociales i {
+.redes_sociales a { /* Dar estilos a los enlaces de las redes sociales */
+    text-decoration: none;
     padding-right: 8px;
+}
+
+.redes_sociales a i { /* Dar estilos a los íconos enlaces de las redes sociales */
+    color: #000;
 }
