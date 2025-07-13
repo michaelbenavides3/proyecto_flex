@@ -8,7 +8,7 @@ body {
     background-color: #FAF7F3;
 }
 
-.caja_banner_menu { /* Bloque para contener el banner y el menu */
+.caja-banner-menu { /* Bloque para contener el banner y el menu */
     position: fixed;
     top: 0px;
     left: 0px;
@@ -38,25 +38,25 @@ body {
     border: 1px solid #DCC5B2;
 }
 
-.menu__nombre_marca { /* Elemento del bloque menu */
+.menu__nombre-marca { /* Elemento del bloque menu */
     position: absolute;
     left: 20px;
     top: 10px;
     font-family: "Luckiest Guy", cursive;
 }
 
-.menu__nombre_marca a { /* Elemento del bloque menu --- se modificaron las equitas de tipo enlace */
+.menu__nombre-marca a { /* Elemento del bloque menu --- se modificaron las equitas de tipo enlace */
     text-decoration: none;
     color: #000;
 }
 
-.barra_busqueda { /* bloque: Ubicar de manera absoluta la barra de búsqueda dentro del bloque menú  */
+.barra-busqueda { /* bloque: Ubicar de manera absoluta la barra de búsqueda dentro del bloque menú  */
     position: absolute;
     right: 440px;
     top: 3px;
 }
 
-.barra_busqueda input { /* Das estilos a la barra de búsqueda */
+.barra-busqueda input { /* Das estilos a la barra de búsqueda */
     height: 33px;
     width: 600px;
     border-radius: 8px;
@@ -99,7 +99,7 @@ main { /* Bloque que contiene los elementos barra lateral izq, galería e ícono
     border: 1px solid #DCC5B2;
 }
 
-.barra_lateral { /* Bloque para contener los elementos de la barra lateral */
+.barra-lateral { /* Bloque para contener los elementos de la barra lateral */
     position: absolute;
     width: 230px;
     left: 0px;
@@ -109,23 +109,23 @@ main { /* Bloque que contiene los elementos barra lateral izq, galería e ícono
     border: 1px solid #DCC5B2;
 }
 
-.barra_lateral div {
+.barra-lateral div {
     margin-bottom: 10px;
 }
 
-.barra_lateral div a::before { /* Agregar íconos a los enlaces de categorías del menú del comercio */
+.barra-lateral div a::before { /* Agregar íconos a los enlaces de categorías del menú del comercio */
     font-family: "Font Awesome 6 Free";
     content: "\f2e7";
     font-weight: 900;
     padding-right: 10px;
 }
 
-.barra_lateral div a { /* Dar estilos a los enlaces que contienes las categorías */
+.barra-lateral div a { /* Dar estilos a los enlaces que contienes las categorías */
     text-decoration: none;
     color: #000;
 }
 
-.barra_lateral__titulo { /* Elemento de la barra lateral: estilos al título del menú del comercio */
+.barra-lateral__titulo { /* Elemento de la barra lateral: estilos al título del menú del comercio */
     font-family: "Luckiest Guy", cursive;
     font-size: large;
     margin: 10px;
@@ -159,7 +159,7 @@ main { /* Bloque que contiene los elementos barra lateral izq, galería e ícono
     
 }
 
-.redes_sociales { /* Bloque que contiene los íconos de las redes sociales del comercio */
+.redes-sociales { /* Bloque que contiene los íconos de las redes sociales del comercio */
     position: absolute;
     width: auto;
     height: auto;
@@ -168,11 +168,11 @@ main { /* Bloque que contiene los elementos barra lateral izq, galería e ícono
     bottom: 10px;
 }
 
-.redes_sociales a { /* Dar estilos a los enlaces de las redes sociales */
+.redes-sociales a { /* Dar estilos a los enlaces de las redes sociales */
     text-decoration: none;
     padding-right: 8px;
 }
 
-.redes_sociales a i { /* Dar estilos a los íconos enlaces de las redes sociales */
+.redes-sociales a i { /* Dar estilos a los íconos enlaces de las redes sociales */
     color: #000;
 }
