@@ -8,12 +8,18 @@ body {
     background-color: #FAF7F3;
 }
 
+:root{
+  --principal-color: #26981E;
+  --secundario-color: #81E26B;
+
+}
+
 .caja-banner-menu { /* Bloque para contener el banner y el menu */
-    position: fixed;
+    /* position: fixed; */
     top: 0px;
     left: 0px;
     width: 100%;
-    z-index: 100;
+    z-index: 1;
 }
 
 .banner { /* Bloque para contener las etiquetas dentro del banner */
@@ -97,6 +103,7 @@ main { /* Bloque que contiene los elementos barra lateral izq, galería e ícono
     font-family: "Roboto Flex", sans-serif;
     background-color: #F0E4D3;
     border: 1px solid #DCC5B2;
+    margin-top: 20px;
 }
 
 .barra-lateral { /* Bloque para contener los elementos de la barra lateral */
