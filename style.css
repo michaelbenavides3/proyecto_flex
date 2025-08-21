@@ -5,12 +5,13 @@
 }
 
 body {
-    background-color: #FAF7F3;
+    background-color: silver;
 }
 
 :root{
   --principal-color: #26981E;
   --secundario-color: #81E26B;
+  --body-color:#ADFF2F;
 
 }
 
@@ -20,16 +21,18 @@ body {
     left: 0px;
     width: 100%;
     z-index: 1;
-}
-
-.banner { /* Bloque para contener las etiquetas dentro del banner */
+  }
+  
+  .banner { /* Bloque para contener las etiquetas dentro del banner */
     height: 80px;
-    position: relative;
+    /* flex-direction:  ; */
+    display: flex;
     background-color: var(--principal-color);
 }
 
 .banner__titulo { /*Elemento del bloque banner */
-    position: absolute;
+    align-content: center;
+    /* position: absolute; */
     right: 60px;
     top: 20px;
     text-align: 80px;
@@ -39,13 +42,18 @@ body {
 .menu { /* Bloque menu */
     height: 40px;
     font-family: "Roboto Flex", sans-serif;
-    position: relative;
+    /* position: relative; */
     background-color: #DCC5B2;
     border: 1px solid #DCC5B2;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    
 }
 
 .menu__nombre-marca { /* Elemento del bloque menu */
-    position: absolute;
+    /* position: absolute; */
     left: 20px;
     top: 10px;
     font-family: "Luckiest Guy", cursive;
@@ -57,7 +65,8 @@ body {
 }
 
 .barra-busqueda { /* bloque: Ubicar de manera absoluta la barra de búsqueda dentro del bloque menú  */
-    position: absolute;
+    /* position: absolute; */
+    display: flex;
     right: 440px;
     top: 3px;
 }
@@ -71,18 +80,21 @@ body {
 
 .fa-magnifying-glass { /* Posicionar de manera absoluta el ícono de vidrio de aumento */
     position: absolute;
+    margin: 83px 445px;
     left: 9px;
     top: 9px;
+
 }
 
 .fa-filter { /* Posicionar de manera absoluta el ícono de filtros */
     position: absolute;
+    margin: 83px 325px;
     right: 9px;
     top: 9px;
 }
 
 .menu__enlaces{  /* Elementos  del bloque menú que contiene los íconos del mismo */
-    position: absolute;
+    /* position: absolute; */
     right: 10px;
     top: 10px;
     font-weight: bold;
@@ -94,27 +106,39 @@ body {
     color: #000;
 }
 
-
+/* | */
 main { /* Bloque que contiene los elementos barra lateral izq, galería e íconos */
     max-width: 1100px;
-    height: 480px;
+    height: 500px;
     margin: 120px auto 0px;
-    position: relative;
+    /* position: relative; */
     font-family: "Roboto Flex", sans-serif;
     background-color: var(--secundario-color);
-    border: 1px solid #000;
+    border: 3px dotted #000;
     margin-top: 20px;
+    display: flex;
+    
+  }
+  
+  .barra-lateral { /* Bloque para contener los elementos de la barra lateral */
+    /* position: absolute; */
+    width: 350px;
+    height: 480px;
+    margin-top: 5px;
+    /* left: 0px; */
+    /* top: 0px; */
+    /* bottom: 0px; */
+    margin-left: 10px;
+    padding-left: 10px;
+    border: 3px dashed #000  ;
+    /* margin-top: 15px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 
-.barra-lateral { /* Bloque para contener los elementos de la barra lateral */
-    position: absolute;
-    width: 230px;
-    left: 0px;
-    top: 0px;
-    bottom: 0px;
-    padding-left: 10px;
-    border: 1px solid #000;
-}
+
 
 .barra-lateral div {
     margin-bottom: 10px;
@@ -136,27 +160,39 @@ main { /* Bloque que contiene los elementos barra lateral izq, galería e ícono
     font-family: "Luckiest Guy", cursive;
     font-size: large;
     margin: 10px;
+    text-align: center;
 }
 
 .galeria { /* Bloque que contiene las fotos de los productos del comercio */
     max-width: 859px;
-    position: absolute;
-    right: 0px;
-    margin-top: 10px;
+    /* position: absolute; */
+    /* right: 0px; */
+    margin-left: 15px;
+    margin-top: 2px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
     
 }
 
 .galeria__titulo { /* Elemento del bloque galería: dar estilos al menú */
+    margin-top: 5px;
     text-align: center;
     font-family: "Luckiest Guy", cursive;
+}
+.contenedor__galeria--imagen{
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
 }
 
 .galeria__imagen { /* Elemento del bloque galería: dar estilos a la caja que contiene la imagen del producto */
     width: 206px;
     height: 206px;
-    display: inline-block;
-    border: 1px solid #000;
+    /* display: inline-block; */
+    border: 3.5px dashed #000;
     margin: 0 auto;
+    flex: 22%;
 
 }
 
@@ -167,12 +203,14 @@ main { /* Bloque que contiene los elementos barra lateral izq, galería e ícono
 }
 
 .redes-sociales { /* Bloque que contiene los íconos de las redes sociales del comercio */
-    position: absolute;
+    /* position: absolute; */
     width: auto;
     height: auto;
-    bottom: 0px;
-    left: 10px;
-    bottom: 10px;
+    /* bottom: 0px; */
+    /* left: 10px; */
+    /* bottom: 10px; */
+    display: flex;
+    align-items: center;
 }
 
 .redes-sociales a { /* Dar estilos a los enlaces de las redes sociales */
