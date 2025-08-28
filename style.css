@@ -80,7 +80,7 @@ body {
 
 .fa-magnifying-glass { /* Posicionar de manera absoluta el ícono de vidrio de aumento */
     position: absolute;
-    margin: 83px 445px;
+    margin: 83px 725px;
     left: 9px;
     top: 9px;
 
@@ -88,7 +88,7 @@ body {
 
 .fa-filter { /* Posicionar de manera absoluta el ícono de filtros */
     position: absolute;
-    margin: 83px 325px;
+    margin: 83px 600px;
     right: 9px;
     top: 9px;
 }
@@ -167,8 +167,9 @@ main { /* Bloque que contiene los elementos barra lateral izq, galería e ícono
     max-width: 859px;
     /* position: absolute; */
     /* right: 0px; */
-    margin-left: 15px;
-    margin-top: 2px;
+    /* margin-left: 15px;
+    margin-top: 2px; */
+    margin: 0 15px;
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
@@ -191,8 +192,9 @@ main { /* Bloque que contiene los elementos barra lateral izq, galería e ícono
     height: 206px;
     /* display: inline-block; */
     border: 3.5px dashed #000;
-    margin: 0 auto;
-    flex: 22%;
+    margin: 5px auto;
+    /* margin-bottom: 5px; */
+    /* flex: 22%; */
 
 }
 
