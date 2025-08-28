@@ -38,6 +38,8 @@ body {
     text-align: 80px;
     font-family: "Luckiest Guy", cursive;
     margin-left: 15px;
+    color: white;
+    text-shadow: 4px 4px 2px silver;
 }
 
 .menu { /* Bloque menu */
