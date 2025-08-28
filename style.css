@@ -174,7 +174,8 @@ main { /* Bloque que contiene los elementos barra lateral izq, galería e ícono
     margin: 0 15px;
     display: flex;
     flex-direction: column-reverse;
-    align-items: center;
+    /* align-items: center; */
+    justify-content: flex-end;
     
 }
 
