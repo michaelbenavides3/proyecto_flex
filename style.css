@@ -37,6 +37,7 @@ body {
     top: 20px;
     text-align: 80px;
     font-family: "Luckiest Guy", cursive;
+    margin-left: 15px;
 }
 
 .menu { /* Bloque menu */
@@ -57,6 +58,7 @@ body {
     left: 20px;
     top: 10px;
     font-family: "Luckiest Guy", cursive;
+    margin-right: 15px;
 }
 
 .menu__nombre-marca a { /* Elemento del bloque menu --- se modificaron las equitas de tipo enlace */
@@ -80,7 +82,7 @@ body {
 
 .fa-magnifying-glass { /* Posicionar de manera absoluta el ícono de vidrio de aumento */
     position: absolute;
-    margin: 83px 725px;
+    margin: 83px 715px;
     left: 9px;
     top: 9px;
 
@@ -88,7 +90,7 @@ body {
 
 .fa-filter { /* Posicionar de manera absoluta el ícono de filtros */
     position: absolute;
-    margin: 83px 600px;
+    margin: 83px 610px;
     right: 9px;
     top: 9px;
 }
